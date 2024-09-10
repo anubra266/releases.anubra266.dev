@@ -24,9 +24,8 @@ useSeoMeta({
   ogTitle: `${user.name} is Contributing`,
   ogDescription: `Discover ${user.name} recent pull requests on GitHub.`,
   twitterCard: 'summary_large_image',
-  // Feel free to change this image with your own once deployed to NuxtHub
-  ogImage: 'https://assets.hub.nuxt.com/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL3Bycy5hdGludXguY29tIiwiaWF0IjoxNzI0MTYwMTkxfQ.yYRD-Gs6EyYQSfg27fZVx1Kle7nq7QBSciDui-mbnnU.jpg?theme=light',
-  twitterImage: 'https://assets.hub.nuxt.com/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL3Bycy5hdGludXguY29tIiwiaWF0IjoxNzI0MTYwMTkxfQ.yYRD-Gs6EyYQSfg27fZVx1Kle7nq7QBSciDui-mbnnU.jpg?theme=light',
+  ogImage: 'https://raw.githubusercontent.com/anubra266/releases.anubra266.dev/main/public/og.png',
+  twitterImage: 'https://raw.githubusercontent.com/anubra266/releases.anubra266.dev/main/public/og.png',
 })
 // TODO: OG Image
 </script>
