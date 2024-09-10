@@ -15,7 +15,6 @@ useHead({
   link: [
     { rel: 'icon', href: '/favicon.png' },
     { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
-    { rel: 'alternate', type: 'application/rss+xml', title: `${user.name}'s recent pull requests`, href: '/feed.xml' },
   ],
 })
 useSeoMeta({
@@ -73,11 +72,11 @@ useSeoMeta({
           variant="link"
         />
         <UButton
-          to="/feed.xml"
+          to="https://anubra266.dev"
           external
           target="_blank"
-          aria-label="RSS Feed"
-          icon="i-ph-rss-simple-duotone"
+          aria-label="Personal site"
+          icon="i-ph-user-duotone"
           color="gray"
           variant="link"
         />
