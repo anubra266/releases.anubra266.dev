@@ -1,7 +1,7 @@
 const imageMap: Record<string, string> = {
   panda: "https://panda-css.com/android-chrome-512x512.png",
   zag: "https://zagjs.com/favicon/android-chrome-256x256.png",
-  'ark-ui': "https://ark-ui.com/icon-512.png",
+  ark: "https://ark-ui.com/icon-512.png",
 };
 
 export function getImage(data: any) {
