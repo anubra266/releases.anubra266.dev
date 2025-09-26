@@ -14,13 +14,18 @@ export default defineCachedEventHandler(async (event) => {
     // To exclude the pull requests to your repositories
     // q: `type:pr+author:"${user.username}"+-user:"${user.username}"`,
     // To include the pull requests to your repositories
-    q: `type:pr+author:"${user.username}"`,
+    // q: `type:pr+author:"${user.username}"`,
+    // To exclude a particular repository
+    // q: `type:pr+author:"${user.username}""+-repo:inkeep/agents`,
+    // To exclude a particular organization
+    q: `type:pr+author:"${user.username}"${process.env.CUSTOM_QUERY}`,
     per_page: 50,
     page: 1,
   })
 
   // Filter out closed PRs that are not merged
   const filteredPrs = data.items.filter(pr => !(pr.state === 'closed' && !pr.pull_request?.merged_at))
+
 
   const prs: PullRequest[] = []
   // For each PR, fetch the repository details
